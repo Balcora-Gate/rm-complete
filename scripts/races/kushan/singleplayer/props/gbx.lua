@@ -1,8 +1,10 @@
--- Kushan
+Number_Properties_Priority = 2.0
 
-String_Properties_Priority = 1.0
+Number_Properties = {
+}
+
+String_Properties_Priority = 2.0
 
 String_Properties = {
-	path_build = [[data:scripts/races/kushan/scripts/sp_build.lua]],
-	path_research = [[data:scripts/races/kushan/scripts/sp_research.lua]], 
+	generic_sp_research_restrict = "cpuplayers_defensive,cpuplayers_aggressive,cpuplayers_dynamic,cpuplayers_norushtime5,cpuplayers_norushtime10,cpuplayers_norushtime15,AllShipBuildSpeed,AllShipBuildSpeedHard,AllShipBuildSpeedExpert,ResourceCollectionRateHard,ResourceCollectionRateExpert,MissileDestroyerVolley,HeavyCorvetteAttackBurst",
 }

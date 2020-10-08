@@ -13,8 +13,8 @@ MovieScreen =
 		type = "Movie",
 		name = "MyMovie",
 
-		filenameV = "data:animatics/HwCredits.webm",		
-		--filenameA = "data:Sound/Music/ANIMATIC/credits",
+		filenameV = "data:animatics/animatic_16_credits.webm",
+		filenameA = "data:Sound/Music/ANIMATIC/credits",
 
 		Layout = {
 			pos_XY = { x = 0.5, y = 0.5, xr = "par", yr = "par" },	
@@ -23,8 +23,9 @@ MovieScreen =
 			size_WH = {	w = 100000, h = 1, wr = "px", hr = "par" },
 			max_WH = {	w = 1, h = 1, wr = "par", hr = "par" },			
 		},		
-		--fitScreen = 1,
 
+		--fitScreen = 1,
+		
 	},
 }
 

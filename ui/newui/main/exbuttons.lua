@@ -18,12 +18,12 @@ end
 
 if (CampainButton==nil) then
 	function CampainButton()
-		return NewMenuButton("btnCampaign",		"$2603",	nil,	0,	LAYOUT_MENU_BUTTONS,	"FEButtonStyle1",	nil)
+		return NoButton("btnCampaign")
 	end
 end
 
 if (MPButton==nil) then
 	function MPButton()
-		return NoButton("btnMultiplayer")
+		return NewMenuButton("btnMultiplayer",		"$2621",	nil,	0,	LAYOUT_MENU_OUTLINED_BUTTONS,	"FEButtonStyle1_Alert_Outlined_Chipped",	"UI_ShowScreen('ConnectionType', eTransition);")
 	end
 end

@@ -7,7 +7,7 @@ animatics = {
 	 "data:animatics/2_trailer.lua",
  },
 }
-homeworldclassic = {
+ascension = {
   maxmission = 1,
   mostrecentsave = "",
   scenario = 1,
@@ -64,7 +64,7 @@ Options = {
 	damageFX = 0,
 	backgrounds = 1,
 	weaponFX = 1,
-	hyperspaceQuality = 0,
+	hyperspaceQuality = 1,
 	lightLOD = 3,
 	goblins = 1,		
 	autoLOD = 1,
@@ -77,6 +77,7 @@ Options = {
   	HUDScale = 1,
 	notifications = 0,
   },
+
 }
 PlayerSetup = {
   --chatname = "Player",  -- Randy: This is set to the same as the player profile name by default

@@ -1,6 +1,6 @@
 NewResourceType = StartAsteroidConfig()
-NewResourceType.displayedName="2506"
-NewResourceType.sobDescription="2507"
+NewResourceType.displayedName="$2506"
+NewResourceType.sobDescription="$2507"
 NewResourceType.TOIcon="InvertedTriangle"
 NewResourceType.TOScale=1
 NewResourceType.TODistanceFade0=11000
@@ -34,7 +34,7 @@ NewResourceType.selectionPriority=50
 NewResourceType.relativeMoveFactor=4
 NewResourceType.useEngagementRanges=0
 NewResourceType.pixelSize=3
-NewResourceType.pixelColour={1.0, 0.349, 0.199, 1.0}
+NewResourceType.pixelColour={1.0, 0.349, 0.199, 0.56}
 NewResourceType.pixelColourDepleted={0.5, 0.4, 0.3, 1.0}
 NewResourceType.resourceValue=100
 NewResourceType.blobRadius=500

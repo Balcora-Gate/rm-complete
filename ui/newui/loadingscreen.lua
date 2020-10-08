@@ -40,91 +40,93 @@ LoadingScreen = {
 			name = "bgImage",
 			BackgroundGraphic = {
 				size = { 0, 0 },
-				texture = "DATA:UI/NewUI/Background/HW1_Loading.dds",
+				texture = "DATA:UI/NewUI/Background/HWRM_Loading.dds",
 				textureUV = { 0, 0, 3840, 2160},
 			},
 		},
-		
-		-- progress
+				
+		-- background image 2
 		{
 			type = "Frame",
+
+			Layout = {
+				sector = 1,
+				pos_XY = { x = 0, y = 0.14, xr = "par", yr = "par" },
+				size_WH = { w = 1, h = 0.66, wr = "par", hr = "par" },
+			},
+
+			name = "bgImage2",
+
+		},
+
+		-- progress
+		{
+			type = "ProgressBar",
 			
 			Layout = {
 				sector = 1,
-				pos_XY = { x = 0.078125, y = 0.1851, xr = "par", yr = "par" },
-				size_WH = { w = 0.2974, h = 0.2779, wr = "par", hr = "par" },
-				pivot_XY = { 0.0, 0.0 },
+				pos_XY = { x = 0.5, y = 0.9, xr = "par", yr = "par" },
+				size_WH = { w = 1000, h = 32, wr = "px", hr = "px" },
+				pivot_XY = { 0.5, 0.5 },
 			},
-			
-			backgroundColor = {0,0,0,0}
-			;
-			
-			{
-				type = "ProgressBar",
-				
-				Layout = {
-					sector = 1,
-					pos_XY = { x = 0.5, y = 0.5, xr = "par", yr = "par" },
-					size_WH = { w = 0.9, h = 60, wr = "par", hr = "px" },
-					pivot_XY = { 0.5, 0.5 },
-				},
 
-				progressColor = {240, 170, 0, 255},
-				name = "loadingProgress",
-					
-				filledTextColor			= {255,255,255,0},
-				emptyTextColor			= {255,255,255,0},
-					
-				Text = 
-				{
-					font = "ButtonFont",
-					dropShadow = 1,
-					pixels = 24,
-					vAlign = "Middle",
-					hAlign = "Center",
-					rel=0,
+			progressColor = {240, 170, 0, 255},
+			name = "loadingProgress",
+				
+			filledTextColor			= {235,235,192,255},
+			emptyTextColor			= {101,198,194,255},
+				
+			Text = 
+			{
+				font = "ButtonFont",
+				dropShadow = 1,
+				pixels = 24,
+				vAlign = "Middle",
+				hAlign = "Center",
+				rel=0,
+			},
+				
+			frameOfs = { 0.0, 16/64 },
+			frameCells = { 0, 1, 2, 3 },
+				
+			frameArt = {
+				size = {0, 0},
+				texture = "DATA:UI\\NewUI\\Styles\\Progress_Lines.dds",
+				uvRect = { 2/128, 2/128, 62/128, 30/128 },
+				patch_X = { 8, -18, 8, -18, 8, 0 },
+				patch_Y = { 13, -2, 13, 0 },
+				patch_Scale = 1,
+				--patch_AutoScale = 1,
+				
+				Surface = {
+					surface = "ui_multistate";
+					{ prop = "state0", float3 = { 0.0, 0.0, 1.0 } },
+					{ prop = "state1", float3 = { 0.0, 0.0, 0.0 } },
+					{ prop = "state2", float3 = { 0.0, 0.0, 0.0 } },
+					{ prop = "decal", float3 = { 0.0, 0.0, 0.0 } },
 				},
+			},
+				
+			coreOfs = { 0.0, 32/128 },
+			coreCells = { 0, 1, 2, 3 },
+				
+			coreArt = {
+				size = {0, 0},
+				texture = "DATA:UI\\NewUI\\Styles\\Progress_Lines.dds",
+				uvRect = { 66/128, 2/128, 126/128, 30/128 },
+				patch_X = { 12, -36, 12, 0 },
+				patch_Y = { 6, -2, 4, -4, 4, -2, 6, 0 },
+				patch_Scale = 1,
+				patch_AutoScale = 1,
 					
-				frameOfs = { 0.0, 64/256 },
-				frameCells = { 0, 1, 2, 3 },
-					
-				frameArt = {
-					size = {0, 0},
-					texture = "DATA:UI\\NewUI\\Styles\\Progress_HW1.dds",
-					uvRect = { 2/256, 2/256, 126/256, 62/256 },
-					patch_X = { 50, -25, 50, 0 },
-					patch_Y = { -2, 56, -2, 0 },
-					patch_Scale = 1,
-					--patch_AutoScale = 1,
-					
-					Surface = {
-						surface = "ui_multistate";
-						{ prop = "state0", float3 = { 0.0, 0.0, 1.0 } },
-						{ prop = "state1", float3 = { 0.0, 0.0, 0.0 } },
-						{ prop = "state2", float3 = { 0.0, 0.0, 0.0 } },
-						{ prop = "decal", float3 = { 0.0, 0.0, 0.0 } },
-					},
-				},
-					
-				coreOfs = { 0.0, 64/256 },
-				coreCells = { 0, 1, 2, 3 },
-					
-				coreArt = {
-					size = {0, 0},
-					texture = "DATA:UI\\NewUI\\Styles\\Progress_HW1.dds",
-					uvRect = { 130/256, 2/256, 254/256, 62/256 },
-					patch_X = { 50, -24, 50, 0 },
-					patch_Y = { -2, 56, -2, 0 },
-					patch_Scale = 1,
-					--patch_AutoScale = 1,
-					
-					Surface = {
-						surface = "ui_multistate";
-						{ prop = "state0", float3 = { 0.0, 0.0, 1.0 } },
-						{ prop = "state1", float3 = { 0.0, 0.0, 0.0 } },
-						{ prop = "state2", float3 = { 0.0, 0.0, 0.0 } },
-						{ prop = "decal", float3 = { 0.0, 0.0, 0.0 } },
-					},
+				fill = "DATA:UI\\NewUI\\Styles\\Fill_DotNoise01.tga",
+				
+				Surface = {
+					surface = "ui_multistate";
+					{ prop = "state0", float3 = { 0.0, 0.0, 1.0 } },
+					{ prop = "state1", float3 = { 0.0, 0.0, 0.0 } },
+					{ prop = "state2", float3 = { 0.0, 0.0, 0.0 } },
+					{ prop = "decal", float3 = { 0.0, 0.0, 0.0 } },
 				},
 			},
 		},
